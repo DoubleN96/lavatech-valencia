@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renting Textil | LavaTech Valencia</title>
+    <meta name="description" content="Servicio de renting de sábanas, toallas y mantelería. Gestión integral de stock para hoteles y restaurantes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'head': ['Chakra Petch', 'sans-serif'], 'body': ['Roboto', 'sans-serif'] },
+                    colors: { 'brand-navy': '#0A192F', 'brand-cyan': '#64FFDA', 'brand-white': '#E6F1FF', 'brand-slate': '#8892B0' }
+                }
+            }
+        }
+    </script>
+    <style>.dropdown:hover .dropdown-menu { display: block; }</style>
+</head>
+<body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
+    <a href="https://wa.me/34600000000?text=Info%20Renting" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-bounce"><i class="fab fa-whatsapp text-3xl"></i></a>
+    
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md border-b border-white/10 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest">LAVA<span class="text-brand-cyan">TECH</span></a>
+            <div class="hidden lg:flex gap-8 font-head text-sm uppercase tracking-wide items-center">
+                <a href="index.html" class="hover:text-brand-cyan transition-colors">Inicio</a>
+                <div class="relative dropdown cursor-pointer py-4"><span class="text-brand-cyan flex items-center gap-1">Soluciones <i class="fas fa-chevron-down text-xs"></i></span><div class="dropdown-menu absolute top-full left-0 bg-[#112240] border border-white/10 rounded-xl shadow-2xl w-64 p-4"><a href="lavado-industrial.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Lavado Industrial</a><a href="renting-textil.html" class="block px-4 py-3 bg-brand-navy rounded text-brand-cyan">Renting Textil</a><a href="higienizacion.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Higienización RABC</a></div></div>
+                <!-- ...otros menús... -->
+                <a href="contacto.html" class="hover:text-brand-cyan transition-colors">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden md:block border border-brand-cyan text-brand-cyan px-6 py-2 rounded hover:bg-brand-cyan hover:text-brand-navy transition-all font-head font-bold">Área Clientes</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-12">Renting Textil Integral</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80" class="rounded-2xl shadow-2xl border border-white/10" alt="Toallas limpias">
+                <div>
+                    <h2 class="text-2xl font-head text-brand-cyan mb-4">No compres, alquila.</h2>
+                    <p class="text-lg mb-6">Transforma un coste fijo (CAPEX) en variable (OPEX). Nosotros ponemos la ropa, la lavamos y la reponemos.</p>
+                    <div class="bg-[#112240] p-6 rounded-xl border-l-4 border-brand-cyan mb-6">
+                        <p class="text-brand-white font-bold mb-2">Ventajas Financieras</p>
+                        <ul class="text-sm space-y-2">
+                            <li>• Sin inversión inicial en ajuar.</li>
+                            <li>• Factura única mensual predecible.</li>
+                            <li>• Deducción fiscal del 100% del servicio.</li>
+                        </ul>
+                    </div>
+                    <a href="contacto.html" class="inline-block bg-brand-cyan text-brand-navy px-8 py-3 rounded font-bold font-head hover:bg-white transition-colors">Solicitar Catálogo</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm text-center"><p>&copy; 2026 LavaTech Valencia S.L.</p></footer>
+</body>
+</html>
