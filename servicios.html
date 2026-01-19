@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | LavaTech Valencia</title>
+    <meta name="description" content="Descubre nuestros procesos de lavado industrial, renting textil y trazabilidad RFID. Tecnología punta para el cuidado de tu ropa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'head': ['Chakra Petch', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-navy': '#0A192F',
+                        'brand-cyan': '#64FFDA',
+                        'brand-white': '#E6F1FF',
+                        'brand-slate': '#8892B0'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/34600000000?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20vuestros%20servicios" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-bounce duration-[2000ms]">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Nav -->
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md border-b border-white/10 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest">
+                LAVA<span class="text-brand-cyan">TECH</span>
+            </a>
+            <div class="hidden md:flex gap-8 font-head text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-brand-cyan transition-colors">Inicio</a>
+                <a href="servicios.html" class="text-brand-cyan">Servicios</a>
+                <a href="sectores.html" class="hover:text-brand-cyan transition-colors">Sectores</a>
+                <a href="contacto.html" class="hover:text-brand-cyan transition-colors">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden md:block border border-brand-cyan text-brand-cyan px-6 py-2 rounded hover:bg-brand-cyan hover:text-brand-navy transition-all font-head font-bold">
+                Área Clientes
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-12 text-center">Nuestra Tecnología</h1>
+
+            <!-- Lavado -->
+            <section id="lavado" class="mb-24 scroll-mt-28">
+                <div class="flex flex-col md:flex-row items-center gap-12 bg-[#112240] p-8 md:p-12 rounded-2xl border border-white/5">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1663068307522-1731d9c8fbc2?ixlib=rb-4.1.0&q=80" class="rounded-lg w-full h-[400px] object-cover" alt="Lavadoras industriales">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl font-head font-bold text-brand-white mb-6">Lavado de Túnel Continuo</h2>
+                        <p class="text-lg mb-6 leading-relaxed">Nuestro sistema de túnel Jensen de 14 módulos permite procesar grandes volúmenes con un consumo mínimo de agua y energía.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Dosificación automática de detergentes Ecolab.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Control de pH y temperatura en tiempo real.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Desinfección térmica a 80ºC garantizada.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Renting -->
+            <section id="renting" class="mb-24 scroll-mt-28">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12 bg-[#112240] p-8 md:p-12 rounded-2xl border border-white/5">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80" class="rounded-lg w-full h-[400px] object-cover" alt="Toallas limpias">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-3xl font-head font-bold text-brand-white mb-6">Renting Textil Integral</h2>
+                        <p class="text-lg mb-6 leading-relaxed">Olvídate de comprar sábanas, toallas o manteles. Con nuestro servicio de renting, siempre tendrás ropa nueva y en perfecto estado, pagando solo por lo que lavas.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Inversión inicial CERO.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Reposición automática por desgaste.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-brand-cyan"></i>
+                                <span>Personalización con tu logo (Bordado).</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RFID -->
+            <section id="logistica" class="bg-brand-cyan/10 p-12 rounded-2xl text-center border border-brand-cyan/20">
+                <h2 class="text-3xl font-head font-bold text-brand-white mb-6">Trazabilidad RFID</h2>
+                <p class="max-w-3xl mx-auto mb-8 text-lg">
+                    Cada prenda lleva un chip RFID cosido que nos permite saber exactamente cuántos ciclos de lavado lleva, dónde se encuentra y cuándo debe ser retirada.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="p-6 bg-brand-navy rounded-xl">
+                        <p class="font-bold text-brand-white mb-2">Control de Stock</p>
+                        <p class="text-sm">Sin pérdidas de inventario.</p>
+                    </div>
+                    <div class="p-6 bg-brand-navy rounded-xl">
+                        <p class="font-bold text-brand-white mb-2">Facturación Exacta</p>
+                        <p class="text-sm">Paga solo lo que entregas.</p>
+                    </div>
+                    <div class="p-6 bg-brand-navy rounded-xl">
+                        <p class="font-bold text-brand-white mb-2">Calidad Constante</p>
+                        <p class="text-sm">Retirada automática por antigüedad.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 LavaTech Valencia S.L.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
