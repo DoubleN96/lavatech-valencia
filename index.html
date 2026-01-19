@@ -5,256 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Local Optimizado -->
-    <title>Lavandería Industrial en Valencia | LavaTech - Servicio B2B y Particulares</title>
-    <meta name="description" content="LavaTech Valencia: Servicio de lavandería industrial premium para hoteles, restaurantes y particulares. Recogida y entrega en 24h. Solicita presupuesto.">
-    <meta name="keywords" content="lavanderia industrial valencia, limpieza edredones, lavanderia hoteles valencia, servicio lavanderia restaurantes">
-    <meta name="geo.region" content="ES-VC">
-    <meta name="geo.placename" content="Valencia">
+    <title>LavaTech Valencia | Lavandería Industrial Premium 24h</title>
+    <meta name="description" content="Servicio integral de lavandería industrial en Valencia. Recogida y entrega en 24h para hoteles, restaurantes y hospitales. Certificación ISO de higiene.">
     
-    <!-- OpenGraph -->
-    <meta property="og:title" content="LavaTech | Lavandería Industrial Premium en Valencia">
-    <meta property="og:description" content="Higiene impecable y entrega puntual para tu negocio o hogar.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="LavaTech | La Lavandería de los Mejores Hoteles de Valencia">
     <meta property="og:image" content="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?q=80&w=1200">
-    <meta property="og:type" content="website">
-
-    <!-- Preload Critical Assets -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80&w=1920">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+                    fontFamily: {
+                        'head': ['Chakra Petch', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    },
                     colors: {
-                        'tech-blue': '#0066CC',
-                        'tech-dark': '#003366',
-                        'tech-light': '#E6F0FA',
-                        'tech-accent': '#00CC99'
+                        'brand-navy': '#0A192F',
+                        'brand-cyan': '#64FFDA',
+                        'brand-white': '#E6F1FF',
+                        'brand-slate': '#8892B0'
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased">
+<body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
 
-    <!-- A11y Skip Link -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-tech-blue text-white p-4 z-50 rounded">Saltar al contenido principal</a>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/34600000000?text=Hola,%20me%20interesa%20presupuesto%20para%20mi%20negocio" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-bounce duration-[2000ms]" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
-    <!-- Header -->
-    <header class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
+    <!-- Nav -->
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md border-b border-white/10 z-40">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2 group" aria-label="LavaTech Inicio">
-                <div class="w-10 h-10 bg-tech-blue rounded-lg flex items-center justify-center text-white font-black text-xl group-hover:bg-tech-dark transition-colors">L</div>
-                <span class="text-xl font-bold tracking-tight text-slate-900">LavaTech<span class="text-tech-blue">.</span></span>
+            <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest">
+                LAVA<span class="text-brand-cyan">TECH</span>
             </a>
             
-            <nav class="hidden md:flex gap-8 font-medium text-slate-600" role="navigation">
-                <a href="#servicios" class="hover:text-tech-blue transition-colors">Servicios</a>
-                <a href="#sectores" class="hover:text-tech-blue transition-colors">Sectores</a>
-                <a href="#proceso" class="hover:text-tech-blue transition-colors">Proceso</a>
-            </nav>
+            <div class="hidden md:flex gap-8 font-head text-sm uppercase tracking-wide">
+                <a href="index.html" class="text-brand-cyan">Inicio</a>
+                <a href="servicios.html" class="hover:text-brand-cyan transition-colors">Servicios</a>
+                <a href="sectores.html" class="hover:text-brand-cyan transition-colors">Sectores</a>
+                <a href="contacto.html" class="hover:text-brand-cyan transition-colors">Contacto</a>
+            </div>
 
-            <a href="#contacto" class="bg-tech-blue text-white px-6 py-2.5 rounded-full font-bold hover:bg-tech-dark transition-all shadow-lg shadow-tech-blue/20 focus:ring-4 focus:ring-tech-light">
-                Pedir Presupuesto
+            <a href="contacto.html" class="hidden md:block border border-brand-cyan text-brand-cyan px-6 py-2 rounded hover:bg-brand-cyan hover:text-brand-navy transition-all font-head font-bold">
+                Área Clientes
             </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative min-h-screen flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1663068307522-1731d9c8fbc2?ixlib=rb-4.1.0&q=80&w=1920" class="w-full h-full object-cover opacity-20" alt="Industrial Laundry Machines">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/50 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-4xl">
+                <p class="text-brand-cyan font-head mb-4 tracking-[0.2em]">LÍDERES EN LA COMUNIDAD VALENCIANA</p>
+                <h1 class="text-5xl md:text-8xl font-head font-bold text-brand-white mb-8 leading-tight">
+                    Higiene Industrial <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-500">Sin Compromisos.</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 max-w-2xl text-brand-slate/80 leading-relaxed">
+                    Procesamos más de 50 toneladas diarias de textil con tecnología RFID y desinfección termoquímica certificada. Tu socio estratégico en limpieza.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="contacto.html" class="bg-brand-cyan text-brand-navy px-8 py-4 rounded font-head font-bold text-lg hover:bg-white transition-colors text-center">
+                        Solicitar Auditoría Gratuita
+                    </a>
+                    <a href="servicios.html" class="border border-brand-slate text-brand-white px-8 py-4 rounded font-head font-bold text-lg hover:border-brand-cyan hover:text-brand-cyan transition-colors text-center">
+                        Explorar Tecnología
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="relative min-h-screen flex items-center pt-20">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80&w=1920" class="w-full h-full object-cover brightness-[0.3]" alt="Estantería con toallas blancas perfectamente dobladas en lavandería industrial" loading="eager">
+    <!-- Metrics -->
+    <section class="border-y border-white/5 bg-brand-navy">
+        <div class="container mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl md:text-5xl font-head font-bold text-brand-white mb-2">24h</p>
+                <p class="text-sm uppercase tracking-widest text-brand-cyan">Tiempo de Entrega</p>
             </div>
-            
-            <div class="container mx-auto px-6 relative z-10 text-white">
-                <div class="max-w-3xl">
-                    <span class="bg-tech-accent/20 text-tech-accent border border-tech-accent/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block backdrop-blur-sm">Líderes en Valencia</span>
-                    <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
-                        La limpieza impecable que <span class="text-transparent bg-clip-text bg-gradient-to-r from-tech-accent to-blue-400">tu negocio merece.</span>
-                    </h1>
-                    <p class="text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl font-light">
-                        Servicio integral de lavandería industrial con recogida y entrega en 24h. Tecnología de desinfección certificada para hoteles, restaurantes y clínicas.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contacto" class="bg-tech-blue text-white px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-white hover:text-tech-blue transition-all">
-                            Solicitar Presupuesto Gratis
-                        </a>
-                        <a href="#servicios" class="bg-white/10 backdrop-blur border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-white/20 transition-all">
-                            Ver Servicios
-                        </a>
-                    </div>
-                    
-                    <div class="mt-12 flex gap-8 text-sm font-medium opacity-80">
-                        <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-tech-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                            Entrega 24h
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-tech-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                            Certificado ISO
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-tech-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
-                            Cobertura total Valencia
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-head font-bold text-brand-white mb-2">+500</p>
+                <p class="text-sm uppercase tracking-widest text-brand-cyan">Clientes Activos</p>
             </div>
-        </section>
-
-        <!-- Sectors Section -->
-        <section id="sectores" class="py-24 bg-white" aria-labelledby="sectores-title">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 id="sectores-title" class="text-3xl md:text-4xl font-black text-slate-900 mb-6">Soluciones para cada sector</h2>
-                    <p class="text-slate-600 text-lg">Adaptamos nuestros procesos de lavado y planchado a las exigencias específicas de tu industria.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Hotel -->
-                    <article class="group bg-slate-50 rounded-3xl p-8 transition-all hover:bg-tech-blue hover:text-white hover:-translate-y-2 duration-300">
-                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm mb-6 group-hover:scale-110 transition-transform">🏨</div>
-                        <h3 class="text-2xl font-bold mb-4">Hoteles y Alojamiento</h3>
-                        <p class="text-slate-500 mb-6 group-hover:text-blue-100">Sábanas, toallas y mantelería con un blanco radiante y tacto premium. Gestión de stock y rotación rápida.</p>
-                        <ul class="space-y-2 text-sm font-medium opacity-80">
-                            <li>• Blancura garantizada</li>
-                            <li>• Planchado industrial</li>
-                            <li>• Entrega diaria</li>
-                        </ul>
-                    </article>
-
-                    <!-- Restaurant -->
-                    <article class="group bg-slate-50 rounded-3xl p-8 transition-all hover:bg-tech-dark hover:text-white hover:-translate-y-2 duration-300">
-                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm mb-6 group-hover:scale-110 transition-transform">🍽️</div>
-                        <h3 class="text-2xl font-bold mb-4">Restauración</h3>
-                        <p class="text-slate-500 mb-6 group-hover:text-blue-100">Eliminación de manchas difíciles (grasas, vino). Manteles, servilletas y uniformes impecables para tu servicio.</p>
-                        <ul class="space-y-2 text-sm font-medium opacity-80">
-                            <li>• Tratamiento antimanchas</li>
-                            <li>• Cuidado de tejidos</li>
-                            <li>• Higienización total</li>
-                        </ul>
-                    </article>
-
-                    <!-- Private -->
-                    <article class="group bg-slate-50 rounded-3xl p-8 transition-all hover:bg-tech-accent hover:text-white hover:-translate-y-2 duration-300">
-                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm mb-6 group-hover:scale-110 transition-transform">🏠</div>
-                        <h3 class="text-2xl font-bold mb-4">Particulares (Volumen)</h3>
-                        <p class="text-slate-500 mb-6 group-hover:text-green-50">Ideal para limpieza de temporada: Edredones, cortinas, alfombras y grandes volúmenes de ropa.</p>
-                        <ul class="space-y-2 text-sm font-medium opacity-80">
-                            <li>• Edredones y Mantas</li>
-                            <li>• Alfombras</li>
-                            <li>• Recogida a domicilio</li>
-                        </ul>
-                    </article>
-                </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-head font-bold text-brand-white mb-2">99.9%</p>
+                <p class="text-sm uppercase tracking-widest text-brand-cyan">Desinfección</p>
             </div>
-        </section>
-
-        <!-- Feature/Process -->
-        <section id="proceso" class="py-24 bg-tech-light overflow-hidden">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <div class="w-full lg:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1737054718383-68055423d164?ixlib=rb-4.1.0&q=80" alt="Detalle de toallas limpias y suaves" class="rounded-[2.5rem] shadow-2xl w-full object-cover h-[600px]">
-                    </div>
-                    <div class="w-full lg:w-1/2">
-                        <h2 class="text-4xl font-black text-slate-900 mb-8">Tecnología al servicio de la higiene</h2>
-                        <div class="space-y-10">
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 bg-tech-blue text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900 mb-2">Desinfección Certificada</h3>
-                                    <p class="text-slate-600 leading-relaxed">Utilizamos procesos de lavado térmico y químico que eliminan el 99.9% de bacterias y virus, garantizando la seguridad sanitaria.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 bg-tech-blue text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900 mb-2">Eco-Eficiencia</h3>
-                                    <p class="text-slate-600 leading-relaxed">Nuestra maquinaria de última generación reduce el consumo de agua y energía en un 40%, protegiendo el medio ambiente.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-12 h-12 bg-tech-blue text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-slate-900 mb-2">Logística Inteligente</h3>
-                                    <p class="text-slate-600 leading-relaxed">Sistema de trazabilidad por RFID para que nunca pierdas una prenda. Sabrás dónde está tu ropa en todo momento.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-head font-bold text-brand-white mb-2">ISO</p>
+                <p class="text-sm uppercase tracking-widest text-brand-cyan">9001 & 14001</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Form -->
-        <section id="contacto" class="py-24 bg-tech-dark text-white relative">
-            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="max-w-4xl mx-auto bg-white rounded-[2.5rem] p-8 md:p-16 shadow-2xl text-slate-900">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-black mb-4">Solicita tu presupuesto personalizado</h2>
-                        <p class="text-slate-500">Respuesta garantizada en menos de 2 horas laborables.</p>
-                    </div>
-
-                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Gracias. Un asesor comercial contactará contigo en breve.');">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="space-y-2">
-                                <label for="nombre" class="text-sm font-bold text-slate-700 uppercase tracking-wide">Nombre / Empresa</label>
-                                <input type="text" id="nombre" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all">
-                            </div>
-                            <div class="space-y-2">
-                                <label for="telefono" class="text-sm font-bold text-slate-700 uppercase tracking-wide">Teléfono</label>
-                                <input type="tel" id="telefono" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all">
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-2">
-                            <label for="sector" class="text-sm font-bold text-slate-700 uppercase tracking-wide">Sector</label>
-                            <select id="sector" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all">
-                                <option>Hotel / Alojamiento</option>
-                                <option>Restaurante / Catering</option>
-                                <option>Gimnasio / Spa</option>
-                                <option>Clínica / Sanidad</option>
-                                <option>Particular</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="space-y-2">
-                            <label for="mensaje" class="text-sm font-bold text-slate-700 uppercase tracking-wide">Necesidades (Volumen aprox.)</label>
-                            <textarea id="mensaje" rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full bg-tech-blue text-white font-bold text-lg py-4 rounded-xl hover:bg-tech-dark transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 transform duration-200">
-                            Enviar Solicitud
-                        </button>
-                        
-                        <p class="text-center text-xs text-slate-400 mt-4">
-                            Al enviar aceptas nuestra política de privacidad. Tus datos están seguros.
-                        </p>
-                    </form>
+    <!-- Services Preview -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-head font-bold text-brand-white mb-4">Soluciones Integrales</h2>
+                    <p class="text-brand-slate max-w-xl">Cubrimos todo el ciclo de vida del textil, desde la recogida hasta la reposición.</p>
                 </div>
+                <a href="servicios.html" class="text-brand-cyan font-bold hover:underline hidden md:block">Ver todos los servicios -></a>
             </div>
-        </section>
-    </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <a href="servicios.html#lavado" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                    <i class="fas fa-soap text-4xl text-brand-cyan mb-6"></i>
+                    <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Lavado Industrial</h3>
+                    <p class="text-sm leading-relaxed mb-6">Procesos de lavado en túnel continuo con dosificación automática para garantizar la blancura y la higiene.</p>
+                    <span class="text-brand-cyan text-sm font-bold">Más detalles -></span>
+                </a>
+                
+                <!-- Card 2 -->
+                <a href="servicios.html#renting" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                    <i class="fas fa-tshirt text-4xl text-brand-cyan mb-6"></i>
+                    <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Renting Textil</h3>
+                    <p class="text-sm leading-relaxed mb-6">Olvídate de la inversión en sábanas y toallas. Nosotros gestionamos el stock, tú pagas por uso.</p>
+                    <span class="text-brand-cyan text-sm font-bold">Más detalles -></span>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="servicios.html#logistica" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                    <i class="fas fa-truck-fast text-4xl text-brand-cyan mb-6"></i>
+                    <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Logística 24/7</h3>
+                    <p class="text-sm leading-relaxed mb-6">Flota propia de camiones con trazabilidad GPS. Entregas puntuales en jaulas higienizadas.</p>
+                    <span class="text-brand-cyan text-sm font-bold">Más detalles -></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="py-24 bg-[#112240]">
         <div class="container mx-auto px-6 text-center">
-            <div class="mb-8 flex justify-center items-center gap-2 opacity-50">
-                <div class="w-6 h-6 bg-slate-700 rounded flex items-center justify-center text-white font-bold text-xs">L</div>
-                <span class="font-bold tracking-widest uppercase">LavaTech Valencia</span>
+            <h2 class="text-3xl font-head font-bold text-brand-white mb-16">Confían en LavaTech</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 opacity-50 grayscale">
+                <!-- Logos simulados con texto -->
+                <div class="text-2xl font-bold font-head">HOTEL VALENCIA</div>
+                <div class="text-2xl font-bold font-head">RESTAURANTE MAR</div>
+                <div class="text-2xl font-bold font-head">CLÍNICA SALUD</div>
+                <div class="text-2xl font-bold font-head">GYM FITNESS</div>
             </div>
-            <p>&copy; 2026 LavaTech S.L. - Polígono Industrial Fuente del Jarro, Valencia.</p>
-            <div class="mt-4 space-x-4">
-                <a href="#" class="hover:text-white transition-colors">Aviso Legal</a>
-                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
-                <a href="#" class="hover:text-white transition-colors">Cookies</a>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-cyan/10"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-8">¿Listo para mejorar tu servicio?</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto">Deja que nos encarguemos de la ropa sucia mientras tú te enfocas en tus clientes.</p>
+            <a href="contacto.html" class="inline-block bg-brand-cyan text-brand-navy px-12 py-5 rounded font-head font-bold text-xl hover:scale-105 transition-transform shadow-lg shadow-brand-cyan/20">
+                Contactar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 LavaTech Valencia S.L.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-brand-cyan">Privacidad</a>
+                <a href="#" class="hover:text-brand-cyan">Términos</a>
+                <a href="contacto.html" class="hover:text-brand-cyan">Contacto</a>
             </div>
         </div>
     </footer>
