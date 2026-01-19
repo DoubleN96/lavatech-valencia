@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectores | LavaTech Valencia</title>
+    <meta name="description" content="Soluciones de lavandería para hoteles, hospitales, gimnasios y restaurantes en Valencia. Cumplimos con normativa RABC e ISO.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'head': ['Chakra Petch', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-navy': '#0A192F',
+                        'brand-cyan': '#64FFDA',
+                        'brand-white': '#E6F1FF',
+                        'brand-slate': '#8892B0'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
+
+    <a href="https://wa.me/34600000000?text=Hola,%20busco%20servicio%20para%20mi%20sector" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-bounce duration-[2000ms]">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md border-b border-white/10 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest">
+                LAVA<span class="text-brand-cyan">TECH</span>
+            </a>
+            <div class="hidden md:flex gap-8 font-head text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-brand-cyan transition-colors">Inicio</a>
+                <a href="servicios.html" class="hover:text-brand-cyan transition-colors">Servicios</a>
+                <a href="sectores.html" class="text-brand-cyan">Sectores</a>
+                <a href="contacto.html" class="hover:text-brand-cyan transition-colors">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden md:block border border-brand-cyan text-brand-cyan px-6 py-2 rounded hover:bg-brand-cyan hover:text-brand-navy transition-all font-head font-bold">
+                Área Clientes
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-4 text-center">Sectores Especializados</h1>
+            <p class="text-center max-w-2xl mx-auto mb-16 text-lg">Cada industria tiene normativas y necesidades diferentes. Nosotros las dominamos todas.</p>
+
+            <div class="grid grid-cols-1 gap-16">
+                <!-- Hostelería -->
+                <article class="bg-[#112240] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1698945298325-8902550a45dd?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover" alt="Habitación de hotel impecable">
+                        <div class="absolute inset-0 bg-brand-navy/30"></div>
+                        <h2 class="absolute bottom-6 left-8 text-3xl font-head font-bold text-white">Hoteles y Alojamiento</h2>
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">El Reto</h3>
+                                <p class="mb-4">La experiencia del huésped depende de la suavidad y blancura de las sábanas. Una mancha es una mala reseña.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">La Solución LavaTech</h3>
+                                <p class="mb-4">Blancura óptica garantizada, tacto premium y doblado perfecto para facilitar el trabajo de las camareras de piso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sanidad -->
+                <article class="bg-[#112240] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover" alt="Ropa sanitaria limpia">
+                        <div class="absolute inset-0 bg-brand-navy/30"></div>
+                        <h2 class="absolute bottom-6 left-8 text-3xl font-head font-bold text-white">Hospitales y Clínicas</h2>
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">El Reto</h3>
+                                <p class="mb-4">Riesgo biológico y contaminación cruzada. Normativa RABC estricta.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">La Solución LavaTech</h3>
+                                <p class="mb-4">Barrera sanitaria física en planta. Desinfección termoquímica y embolsado hermético para quirófanos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Restauración -->
+                <article class="bg-[#112240] rounded-2xl overflow-hidden border border-white/5">
+                    <div class="h-64 overflow-hidden relative">
+                        <!-- Placeholder visual técnico -->
+                        <div class="w-full h-full bg-slate-800 flex items-center justify-center">
+                            <i class="fas fa-utensils text-6xl text-brand-slate opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-brand-navy/30"></div>
+                        <h2 class="absolute bottom-6 left-8 text-3xl font-head font-bold text-white">Restaurantes y Eventos</h2>
+                    </div>
+                    <div class="p-8 md:p-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">El Reto</h3>
+                                <p class="mb-4">Grasas, vino y salsas difíciles de quitar. Manteles de algodón y lino delicados.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-brand-cyan font-bold mb-4 uppercase tracking-widest text-sm">La Solución LavaTech</h3>
+                                <p class="mb-4">Procesos enzimáticos específicos para grasas orgánicas. Planchado calandra de alta presión para un acabado impecable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 LavaTech Valencia S.L.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
