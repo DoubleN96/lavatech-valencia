@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | LavaTech Valencia</title>
+    <meta name="description" content="Solicita presupuesto para tu lavandería industrial. Atención al cliente 24/7 en Valencia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'head': ['Chakra Petch', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'brand-navy': '#0A192F',
+                        'brand-cyan': '#64FFDA',
+                        'brand-white': '#E6F1FF',
+                        'brand-slate': '#8892B0'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
+
+    <a href="https://wa.me/34600000000?text=Hola,%20tengo%20una%20duda%20urgente" target="_blank" class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-bounce duration-[2000ms]">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <nav class="fixed w-full bg-brand-navy/95 backdrop-blur-md border-b border-white/10 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest">
+                LAVA<span class="text-brand-cyan">TECH</span>
+            </a>
+            <div class="hidden md:flex gap-8 font-head text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-brand-cyan transition-colors">Inicio</a>
+                <a href="servicios.html" class="hover:text-brand-cyan transition-colors">Servicios</a>
+                <a href="sectores.html" class="hover:text-brand-cyan transition-colors">Sectores</a>
+                <a href="contacto.html" class="text-brand-cyan">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden md:block border border-brand-cyan text-brand-cyan px-6 py-2 rounded hover:bg-brand-cyan hover:text-brand-navy transition-all font-head font-bold">
+                Área Clientes
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-12 text-center">Hablemos de Negocios</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Form -->
+                    <div class="bg-[#112240] p-8 rounded-2xl border border-white/5 shadow-2xl">
+                        <h2 class="text-2xl font-head font-bold text-brand-white mb-6">Solicitud de Presupuesto</h2>
+                        <form onsubmit="event.preventDefault(); alert('Mensaje enviado. Nuestro equipo técnico analizará tu caso.'); window.location.href='index.html';" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-brand-cyan uppercase tracking-widest">Empresa</label>
+                                <input type="text" required class="w-full bg-brand-navy border border-brand-slate/20 rounded p-3 text-brand-white focus:border-brand-cyan focus:outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-brand-cyan uppercase tracking-widest">Email</label>
+                                <input type="email" required class="w-full bg-brand-navy border border-brand-slate/20 rounded p-3 text-brand-white focus:border-brand-cyan focus:outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-brand-cyan uppercase tracking-widest">Sector</label>
+                                <select class="w-full bg-brand-navy border border-brand-slate/20 rounded p-3 text-brand-white focus:border-brand-cyan focus:outline-none transition-colors">
+                                    <option>Hotel / Hostal</option>
+                                    <option>Restaurante</option>
+                                    <option>Hospital / Clínica</option>
+                                    <option>Industrial</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 text-brand-cyan uppercase tracking-widest">Mensaje</label>
+                                <textarea rows="4" class="w-full bg-brand-navy border border-brand-slate/20 rounded p-3 text-brand-white focus:border-brand-cyan focus:outline-none transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-cyan text-brand-navy font-bold py-4 rounded hover:bg-white transition-colors font-head text-lg">
+                                Enviar Solicitud
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Info & Map -->
+                    <div class="space-y-12">
+                        <div>
+                            <h3 class="text-xl font-head font-bold text-brand-white mb-4">Planta Central</h3>
+                            <p class="mb-2">Polígono Industrial Fuente del Jarro</p>
+                            <p class="mb-2">C/ Ciudad de Liria, 45</p>
+                            <p>46988 Paterna, Valencia</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-head font-bold text-brand-white mb-4">Contacto Directo</h3>
+                            <p class="mb-2 text-brand-cyan font-bold text-lg">+34 960 000 000</p>
+                            <p>info@lavatech-valencia.com</p>
+                        </div>
+                        
+                        <!-- Static Map Image simulating Google Maps embed -->
+                        <div class="rounded-2xl overflow-hidden border border-white/10 h-64 relative group cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.1.0&q=80" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity" alt="Mapa Ubicación">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="bg-brand-navy/80 text-brand-cyan px-4 py-2 rounded border border-brand-cyan backdrop-blur-sm">Ver en Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 LavaTech Valencia S.L.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
