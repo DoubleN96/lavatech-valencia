@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Local Optimizado -->
     <title>LavaTech Valencia | Lavandería Industrial Premium 24h</title>
     <meta name="description" content="Servicio integral de lavandería industrial en Valencia. Recogida y entrega en 24h para hoteles, restaurantes y hospitales. Certificación ISO de higiene.">
-    
-    <!-- Open Graph -->
     <meta property="og:title" content="LavaTech | La Lavandería de los Mejores Hoteles de Valencia">
     <meta property="og:image" content="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?q=80&w=1200">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
@@ -34,6 +28,11 @@
             }
         }
     </script>
+    <style>
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu { display: none; animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
 <body class="bg-brand-navy text-brand-slate font-body selection:bg-brand-cyan selection:text-brand-navy">
 
@@ -49,10 +48,38 @@
                 LAVA<span class="text-brand-cyan">TECH</span>
             </a>
             
-            <div class="hidden md:flex gap-8 font-head text-sm uppercase tracking-wide">
+            <div class="hidden lg:flex gap-8 font-head text-sm uppercase tracking-wide items-center">
                 <a href="index.html" class="text-brand-cyan">Inicio</a>
-                <a href="servicios.html" class="hover:text-brand-cyan transition-colors">Servicios</a>
-                <a href="sectores.html" class="hover:text-brand-cyan transition-colors">Sectores</a>
+                
+                <!-- Dropdown Soluciones -->
+                <div class="relative dropdown cursor-pointer py-4">
+                    <span class="hover:text-brand-cyan transition-colors flex items-center gap-1">Soluciones <i class="fas fa-chevron-down text-xs"></i></span>
+                    <div class="dropdown-menu absolute top-full left-0 bg-[#112240] border border-white/10 rounded-xl shadow-2xl w-64 p-4">
+                        <a href="lavado-industrial.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Lavado Industrial</a>
+                        <a href="renting-textil.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Renting Textil</a>
+                        <a href="higienizacion.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Higienización RABC</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown Sectores -->
+                <div class="relative dropdown cursor-pointer py-4">
+                    <span class="hover:text-brand-cyan transition-colors flex items-center gap-1">Sectores <i class="fas fa-chevron-down text-xs"></i></span>
+                    <div class="dropdown-menu absolute top-full left-0 bg-[#112240] border border-white/10 rounded-xl shadow-2xl w-64 p-4">
+                        <a href="hoteles.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Hoteles & Hostelería</a>
+                        <a href="sanidad.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Hospitales & Clínicas</a>
+                        <a href="industria.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Industria & Uniformes</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown Empresa -->
+                <div class="relative dropdown cursor-pointer py-4">
+                    <span class="hover:text-brand-cyan transition-colors flex items-center gap-1">Empresa <i class="fas fa-chevron-down text-xs"></i></span>
+                    <div class="dropdown-menu absolute top-full left-0 bg-[#112240] border border-white/10 rounded-xl shadow-2xl w-64 p-4">
+                        <a href="sostenibilidad.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Sostenibilidad</a>
+                        <a href="calidad.html" class="block px-4 py-3 hover:bg-brand-navy rounded text-brand-white hover:text-brand-cyan transition-colors">Certificaciones</a>
+                    </div>
+                </div>
+
                 <a href="contacto.html" class="hover:text-brand-cyan transition-colors">Contacto</a>
             </div>
 
@@ -71,7 +98,7 @@
 
         <div class="container mx-auto px-6 relative z-10 pt-20">
             <div class="max-w-4xl">
-                <p class="text-brand-cyan font-head mb-4 tracking-[0.2em]">LÍDERES EN LA COMUNIDAD VALENCIANA</p>
+                <p class="text-brand-cyan font-head mb-4 tracking-[0.2em] animate-pulse">LÍDERES EN LA COMUNIDAD VALENCIANA</p>
                 <h1 class="text-5xl md:text-8xl font-head font-bold text-brand-white mb-8 leading-tight">
                     Higiene Industrial <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-500">Sin Compromisos.</span>
@@ -80,10 +107,10 @@
                     Procesamos más de 50 toneladas diarias de textil con tecnología RFID y desinfección termoquímica certificada. Tu socio estratégico en limpieza.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6">
-                    <a href="contacto.html" class="bg-brand-cyan text-brand-navy px-8 py-4 rounded font-head font-bold text-lg hover:bg-white transition-colors text-center">
+                    <a href="contacto.html" class="bg-brand-cyan text-brand-navy px-8 py-4 rounded font-head font-bold text-lg hover:bg-white transition-colors text-center shadow-lg shadow-brand-cyan/20">
                         Solicitar Auditoría Gratuita
                     </a>
-                    <a href="servicios.html" class="border border-brand-slate text-brand-white px-8 py-4 rounded font-head font-bold text-lg hover:border-brand-cyan hover:text-brand-cyan transition-colors text-center">
+                    <a href="lavado-industrial.html" class="border border-brand-slate text-brand-white px-8 py-4 rounded font-head font-bold text-lg hover:border-brand-cyan hover:text-brand-cyan transition-colors text-center">
                         Explorar Tecnología
                     </a>
                 </div>
@@ -121,12 +148,12 @@
                     <h2 class="text-3xl md:text-4xl font-head font-bold text-brand-white mb-4">Soluciones Integrales</h2>
                     <p class="text-brand-slate max-w-xl">Cubrimos todo el ciclo de vida del textil, desde la recogida hasta la reposición.</p>
                 </div>
-                <a href="servicios.html" class="text-brand-cyan font-bold hover:underline hidden md:block">Ver todos los servicios -></a>
+                <a href="lavado-industrial.html" class="text-brand-cyan font-bold hover:underline hidden md:block">Ver todos los servicios -></a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <a href="servicios.html#lavado" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                <a href="lavado-industrial.html" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
                     <i class="fas fa-soap text-4xl text-brand-cyan mb-6"></i>
                     <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Lavado Industrial</h3>
                     <p class="text-sm leading-relaxed mb-6">Procesos de lavado en túnel continuo con dosificación automática para garantizar la blancura y la higiene.</p>
@@ -134,7 +161,7 @@
                 </a>
                 
                 <!-- Card 2 -->
-                <a href="servicios.html#renting" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                <a href="renting-textil.html" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
                     <i class="fas fa-tshirt text-4xl text-brand-cyan mb-6"></i>
                     <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Renting Textil</h3>
                     <p class="text-sm leading-relaxed mb-6">Olvídate de la inversión en sábanas y toallas. Nosotros gestionamos el stock, tú pagas por uso.</p>
@@ -142,50 +169,89 @@
                 </a>
 
                 <!-- Card 3 -->
-                <a href="servicios.html#logistica" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
-                    <i class="fas fa-truck-fast text-4xl text-brand-cyan mb-6"></i>
-                    <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Logística 24/7</h3>
-                    <p class="text-sm leading-relaxed mb-6">Flota propia de camiones con trazabilidad GPS. Entregas puntuales en jaulas higienizadas.</p>
+                <a href="higienizacion.html" class="group bg-[#112240] p-8 rounded-xl hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-brand-cyan">
+                    <i class="fas fa-shield-virus text-4xl text-brand-cyan mb-6"></i>
+                    <h3 class="text-xl font-head font-bold text-brand-white mb-4 group-hover:text-brand-cyan transition-colors">Higienización RABC</h3>
+                    <p class="text-sm leading-relaxed mb-6">Protocolos estrictos de biocontaminación para el sector sanitario y alimentario.</p>
                     <span class="text-brand-cyan text-sm font-bold">Más detalles -></span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Social Proof / Testimonials -->
+    <!-- Sectors Preview -->
     <section class="py-24 bg-[#112240]">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-head font-bold text-brand-white mb-16">Confían en LavaTech</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 opacity-50 grayscale">
-                <!-- Logos simulados con texto -->
-                <div class="text-2xl font-bold font-head">HOTEL VALENCIA</div>
-                <div class="text-2xl font-bold font-head">RESTAURANTE MAR</div>
-                <div class="text-2xl font-bold font-head">CLÍNICA SALUD</div>
-                <div class="text-2xl font-bold font-head">GYM FITNESS</div>
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-head font-bold text-brand-white mb-16 text-center">Sectores que Servimos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-white/5">
+                <a href="hoteles.html" class="relative h-80 group overflow-hidden border-r border-white/5">
+                    <img src="https://images.unsplash.com/photo-1698945298325-8902550a45dd?ixlib=rb-4.1.0&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Hoteles">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h3 class="text-3xl font-head font-bold text-white z-10 group-hover:-translate-y-2 transition-transform">Hoteles</h3>
+                    </div>
+                </a>
+                <a href="sanidad.html" class="relative h-80 group overflow-hidden border-r border-white/5">
+                    <img src="https://images.unsplash.com/photo-1724847885015-be191f1a47ef?ixlib=rb-4.1.0&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Sanidad">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h3 class="text-3xl font-head font-bold text-white z-10 group-hover:-translate-y-2 transition-transform">Sanidad</h3>
+                    </div>
+                </a>
+                <a href="industria.html" class="relative h-80 group overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1576141546153-3e04370b5ff7?ixlib=rb-4.1.0&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60" alt="Industria">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h3 class="text-3xl font-head font-bold text-white z-10 group-hover:-translate-y-2 transition-transform">Industria</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-brand-cyan/10"></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <h2 class="text-4xl md:text-6xl font-head font-bold text-brand-white mb-8">¿Listo para mejorar tu servicio?</h2>
-            <p class="text-xl mb-12 max-w-2xl mx-auto">Deja que nos encarguemos de la ropa sucia mientras tú te enfocas en tus clientes.</p>
-            <a href="contacto.html" class="inline-block bg-brand-cyan text-brand-navy px-12 py-5 rounded font-head font-bold text-xl hover:scale-105 transition-transform shadow-lg shadow-brand-cyan/20">
-                Contactar Ahora
-            </a>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-[#020c1b] py-12 border-t border-white/5 text-sm">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; 2026 LavaTech Valencia S.L.</p>
-            <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-brand-cyan">Privacidad</a>
-                <a href="#" class="hover:text-brand-cyan">Términos</a>
-                <a href="contacto.html" class="hover:text-brand-cyan">Contacto</a>
+    <footer class="bg-[#020c1b] pt-24 pb-12 border-t border-white/5 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="index.html" class="text-2xl font-head font-bold text-brand-white tracking-widest block mb-6">
+                        LAVA<span class="text-brand-cyan">TECH</span>
+                    </a>
+                    <p class="text-brand-slate mb-6">Tecnología de lavado industrial para empresas que exigen la máxima calidad.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-brand-navy rounded flex items-center justify-center hover:bg-brand-cyan hover:text-brand-navy transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 bg-brand-navy rounded flex items-center justify-center hover:bg-brand-cyan hover:text-brand-navy transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-brand-white font-bold mb-6 font-head">Soluciones</h4>
+                    <ul class="space-y-4 text-brand-slate">
+                        <li><a href="lavado-industrial.html" class="hover:text-brand-cyan transition-colors">Lavado Industrial</a></li>
+                        <li><a href="renting-textil.html" class="hover:text-brand-cyan transition-colors">Renting Textil</a></li>
+                        <li><a href="higienizacion.html" class="hover:text-brand-cyan transition-colors">Higienización</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-brand-white font-bold mb-6 font-head">Empresa</h4>
+                    <ul class="space-y-4 text-brand-slate">
+                        <li><a href="sostenibilidad.html" class="hover:text-brand-cyan transition-colors">Sostenibilidad</a></li>
+                        <li><a href="calidad.html" class="hover:text-brand-cyan transition-colors">Certificaciones</a></li>
+                        <li><a href="contacto.html" class="hover:text-brand-cyan transition-colors">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-brand-white font-bold mb-6 font-head">Contacto</h4>
+                    <ul class="space-y-4 text-brand-slate">
+                        <li><i class="fas fa-map-marker-alt text-brand-cyan mr-2"></i> Pol. Ind. Fuente del Jarro, Valencia</li>
+                        <li><i class="fas fa-phone text-brand-cyan mr-2"></i> +34 960 000 000</li>
+                        <li><i class="fas fa-envelope text-brand-cyan mr-2"></i> info@lavatech.es</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-brand-slate/50">
+                <p>&copy; 2026 LavaTech Valencia S.L.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-brand-cyan">Privacidad</a>
+                    <a href="#" class="hover:text-brand-cyan">Cookies</a>
+                    <a href="#" class="hover:text-brand-cyan">Aviso Legal</a>
+                </div>
             </div>
         </div>
     </footer>
